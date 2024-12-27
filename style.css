@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: white; /* Changed to white as per your requirement */
+}
+
+header {
+    background-color: #8B4513; /* Light brown */
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: #3B2A20; /* Dark brown */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Hidden by default */
+    transition: left 0.3s;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: #3B2A20; /* Dark brown */
+}
+
+footer {
+    background-color: #8B4513; /* Light brown */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Additional styles from your previous work */
+.wrapper {
+    width: 380px;
+    background: #121125;
+    border-radius: 17px;
+    text-align: center;
+    padding: 20px 30px;
+    box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.wrapper h2 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/* Other styles from the provided CSS */
+form .field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: 0;
+    color: #fff;
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #34495e;
+    border-bottom-width: 2px;
+    overflow: hidden;
+}
+
+form input::placeholder {
+    color: #bfbfbf;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+form input[type="submit"] {
+    border: 0;
+    outline: none;
+    margin-top: 30px;
+    background: linear-gradient(45deg, blue, red);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(65deg, blue, red);
+}
